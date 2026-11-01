@@ -103,7 +103,7 @@ export const siteConfig: SiteConfig = {
   ],
   // Update these links as needed. Use "#" as placeholder for unavailable links.
   socialLinks: [
-    { label: 'GitHub', url: '#', icon: 'github' },
+    { label: 'GitHub', url: 'https://github.com/rushilreddyyaragonda', icon: 'github' },
     { label: 'Email', url: 'mailto:rushil2626reddy@gmail.com', icon: 'mail' },
   ],
   projects: [
@@ -124,8 +124,8 @@ export const siteConfig: SiteConfig = {
       coreApproach:
         'A turn-based model where five policy variables interact through weighted relationships. Each decision modifies multiple variables, and delayed effects propagate through the system over subsequent turns, creating emergent trade-offs.',
       status: 'In development',
-      demoUrl: 'https://the-last-human-decision.vercel.app',
-      githubUrl: '#',
+      demoUrl: 'https://last-human-decision.rushilreddy.tech',
+      githubUrl: 'https://github.com/rushilreddyyaragonda/the-last-human-decision',
       features: [
         { title: 'Five-variable policy model', description: 'Trust, liberty, equity, resilience, and automation are interconnected — changing one affects the others over time.' },
         { title: 'Delayed consequences', description: 'Decisions produce effects that surface turns later, requiring players to think beyond immediate outcomes.' },
@@ -172,8 +172,8 @@ export const siteConfig: SiteConfig = {
       coreApproach:
         'A browser extension that analyzes page content, identifies claims, and presents contextual annotations — evidence fragments, uncertainty indicators, and questions — without making truth judgments.',
       status: 'Functional prototype',
-      demoUrl: 'https://context-shield-chrome-extension.vercel.app',
-      githubUrl: '#',
+      demoUrl: 'https://contextshield.rushilreddy.tech',
+      githubUrl: 'https://github.com/rushilreddyyaragonda/contextshield-browser-extension',
       features: [
         { title: 'Claim identification', description: 'Highlights declarative statements on a page that may benefit from contextual examination.' },
         { title: 'Evidence fragments', description: 'Surfaces surrounding evidence and related context for each identified claim.' },
@@ -220,8 +220,8 @@ export const siteConfig: SiteConfig = {
       coreApproach:
         'An agent-based model where each agent navigates a graph (the city) using configurable decision rules. The simulation runs in real-time, with agents moving, encountering congestion, and adjusting routes. Disruptions can be introduced at any point.',
       status: 'Functional prototype',
-      demoUrl: 'https://crowd-mind-urban-mobility-simulatio.vercel.app',
-      githubUrl: '#',
+      demoUrl: 'https://crowdmind.rushilreddy.tech',
+      githubUrl: 'https://github.com/rushilreddyyaragonda/crowdmind-urban-mobility-simulation',
       features: [
         { title: 'Agent-based movement', description: 'Each agent independently navigates the city graph using its own decision rules.' },
         { title: 'Disruption injection', description: 'Block or slow roads at any point and observe how the system reroutes.' },
@@ -268,8 +268,8 @@ export const siteConfig: SiteConfig = {
       coreApproach:
         'Web Audio API for real-time audio capture and analysis. Canvas rendering for waveforms and frequency spectra. Configurable threshold-based visual alerts that respond to audio characteristics.',
       status: 'Functional prototype',
-      demoUrl: 'https://silent-signal-lime.vercel.app',
-      githubUrl: '#',
+      demoUrl: 'https://silentsignal.rushilreddy.tech',
+      githubUrl: 'https://github.com/rushilreddyyaragonda/silentsignal-accessibility-sound-tool',
       features: [
         { title: 'Real-time waveform', description: 'Live time-domain visualization of incoming audio signals.' },
         { title: 'Frequency spectrum', description: 'Frequency-domain representation showing the distribution of energy across frequencies.' },
@@ -316,8 +316,8 @@ export const siteConfig: SiteConfig = {
       coreApproach:
         'A configurable decision engine where users define objectives (with weights), constraints (hard limits), and fairness criteria. The engine evaluates scenarios — including adversarial ones — and visualizes the gap between objective satisfaction and outcome quality.',
       status: 'In development',
-      demoUrl: 'https://the-alignment-lab-mu.vercel.app',
-      githubUrl: '#',
+      demoUrl: 'https://alignment-lab.rushilreddy.tech',
+      githubUrl: 'https://github.com/rushilreddyyaragonda/the-alignment-lab',
       features: [
         { title: 'Configurable objective weights', description: 'Define what the system optimizes for and how much each objective matters.' },
         { title: 'Hard constraints', description: 'Set non-negotiable limits that the system must respect, regardless of objective scores.' },
@@ -364,8 +364,8 @@ export const siteConfig: SiteConfig = {
       coreApproach:
         'An interactive execution environment with step-by-step tracing, adversarial input generation, implementation comparison, and complexity visualization. The tool focuses on finding failure cases rather than validating success.',
       status: 'In development',
-      demoUrl: 'https://algorithm-autopsy.vercel.app',
-      githubUrl: '#',
+      demoUrl: 'https://algorithm-autopsy.rushilreddy.tech',
+      githubUrl: 'https://github.com/rushilreddyyaragonda/algorithm-autopsy',
       features: [
         { title: 'Step-by-step execution', description: 'Trace through an algorithm one operation at a time, inspecting state at each step.' },
         { title: 'Adversarial input generation', description: 'Automatically generate inputs designed to break the algorithm — edge cases, worst cases, boundary conditions.' },
