@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --paper: #f7f4ef;
+    --paper-dark: #ede8e0;
+    --ink: #1c1c1e;
+    --ink-soft: #3a3a3e;
+    --ink-muted: #6b6b70;
+    --graphite: #d4d0c8;
+    --graphite-soft: #e4e0d8;
+    --cobalt: #1e3a8a;
+    --cobalt-bright: #2563eb;
+    --amber: #b45309;
+    --amber-soft: #d97706;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-serif {
+    font-family: 'Fraunces', Georgia, serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  ::selection {
+    background-color: rgba(37, 99, 235, 0.15);
+    color: var(--ink);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--paper);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--graphite);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ink-muted);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-10 lg:px-16 xl:px-24;
+  }
+
+  .max-w-prose-ed {
+    max-width: 68ch;
+  }
+
+  .editorial-label {
+    @apply font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--ink-muted)];
+  }
+
+  .editorial-divider {
+    border-top: 1px solid var(--graphite);
+  }
+
+  .editorial-link {
+    @apply text-[var(--cobalt-bright)] underline decoration-[var(--graphite)] decoration-1 underline-offset-4 transition-all hover:decoration-[var(--cobalt-bright)];
+  }
+
+  .paper-texture {
+    background-image:
+      radial-gradient(circle at 20% 50%, rgba(212, 208, 200, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(212, 208, 200, 0.10) 0%, transparent 40%),
+      radial-gradient(circle at 40% 80%, rgba(180, 83, 9, 0.04) 0%, transparent 50%);
+  }
+
+  .focus-ring {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-[var(--cobalt-bright)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--paper)];
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out both;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-12px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .animate-draw {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawIn 2s ease-out forwards;
+  }
+
+  @keyframes drawIn {
+    to { stroke-dashoffset: 0; }
+  }
+
+  .animate-pulse-soft {
+    animation: pulseSoft 3s ease-in-out infinite;
+  }
+
+  @keyframes pulseSoft {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-draw {
+    stroke-dashoffset: 0 !important;
+    animation: none !important;
+  }
+}
